@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>This is an example of scrollnav</title>
+  <link rel="stylesheet" type="text/css" href="r.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: #002240;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      color: #fff;
+      margin: 0;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    .navigation a:hover {
+      background-color: #333;
+    }
+
+    .sidenav {
+      background: #002240;
+      position: fixed;
+      height: 100%;
+      width: 20%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      background: blue;
+    }
+
+    .main {
+      background: #002240;
+      margin-left: 20%;
+      padding: 20px;
+      color: #fff;
+      display: inline-block;
+    }
+
+    h3 {
+      padding: 10px 0;
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+
+    /* Making responsive */
+    @media screen and (max-width: 600px) {
+      .sidenav {
+        padding-top: 15px;
+        width: 155px;
+      }
+
+      .sidenav a {
+        padding-left: 20px;
+        font-size: 18px;
+      }
+
+      .main {
+        margin-left: 32%;
+        font-size: 15px;
+      }
+
+      p {
+        display: inline-block;
+      }
+    }
+
+    /* Custom styling for <p> element */
+    p {
+      line-height: 1.5;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class=""></h1>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="College.html">College</a>
+      <a href="#">Jobs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div class="sidenav">
+    <h2>Educational Institution</h2>
+    <!-- Side navigation links -->
+  </div>
+
+  <div class="main">
+    <h3>Presidential Business School</h3>
+    <p>
+      <!-- Content of the paragraph -->
+    </p>
+  </div>
+</body>
+</html>

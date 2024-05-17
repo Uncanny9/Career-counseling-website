@@ -1,0 +1,98 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #002240;
+    padding: 20px;
+    display: flex; /* Add flex display to align items horizontally */
+    justify-content: space-between; /* Align items at the start and end */
+    align-items: center; /* Center items vertically */
+  }
+  
+  h1 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .navigation a:hover {
+    background-color: #333;
+  }
+  
+  .sidenav {
+    background: #002240;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    background: blue;
+  }
+  
+  .main {
+    background: #002240;
+    margin-left: 20%;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+  }
+  
+  h2 {
+    color: #fff;
+    background-color: #183D5D; /* Change the background color to a desired value */
+    padding: 10px;
+    margin: 0;
+  }
+  
+  h3 {
+    padding: 10px 0;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  /* Making responsive */
+  @media screen and (max-width: 600px) {
+    .sidenav {
+      padding-top: 15px;
+      width: 155px;
+    }
+  
+    .sidenav a {
+      padding-left: 20px;
+      font-size: 18px;
+    }
+  
+    .main {
+      margin-left: 32%;
+      font-size: 15px;
+    }
+  
+   p {
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #555; /* Set a desired text color */
+}
+  }
